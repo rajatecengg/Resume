@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enquiry Form</title>
+</head>
+<body style="background-color: darkgrey;"> 
+
+    <!-- Enqiry form -->
+
+    <h1 style="text-align: center;">Enquiry Form</h1>
+
+    <!-- form -->
+           <!-- In action"", data is send on that link, 
+            target="_blank" is used to open new tab after 
+            click on the submit button and in method="get", 
+            send data will show in next tab and in method="post" 
+            send data will not show in the next tab and 
+            NEVER use GET to send sensitive data! 
+            (the submitted form data is visible in the URL!)
+            Always use POST if the form data contains sensitive 
+            or personal information! -->
+ 
+    <form action="mailto:rajat.ecengg@gmail.com"   
+       method="post" target="_blank" autocomplete="on">
+<!-- autocomplete="on" is used to show the previous data to fill-->
+
+
+        <label for="Name">Name</label>
+        <input type="text" value="First Name">
+        <input type="text" value="Last Name">
+        <br>
+        <br>
+        <label for="Mobno">Mobile No</label>
+        <input type="number">
+        <br><br>
+        <input type="file"> <!-- For choose file -->
+        <br><br>
+        <input type="datetime-local">
+        <br><br>
+        <input type="radio">
+        <br><br>
+        <input type="range">
+        <br><br>
+        <label for="Email">Email I'd</label>&nbsp;&nbsp;&nbsp;
+        <input type="email" placeholder="email@email.com"><br><br>
+
+        <label for="password">Password</label>
+        <input type="password" placeholder="Password">
+        
+        <!-- Here input type (radio/checkbox) is used to select the option and if 
+            name attribute is same for all than we can only select one(male/female)
+            option from two options and send the data on given link without use of 
+            the (name attribute) data will not send to the link and id is used same 
+            as lable for and the use of the (value attribute) is that when we select any option 
+            than that option value will send in the form of data to link -->
+        <br><br>&nbsp;
+        <label for="male">Male</label>
+        <input type="radio" id="male" name="gender"   value="Male">
+        <label for="female">Female</label>
+        <input type="radio" id="female" name="gender" value="Female">
+        <br><br>
+        
+
+         <!-- using the checkbox, we can select more than one option at a time -->
+        <label for="programming">Knowledge Of programmings</label>
+        <input type="checkbox" name="programming" id="" value="C">C
+        <input type="checkbox" name="programming" id="" value="Python">Python
+        
+        <br><br>
+        <label for="Nationality">Nationality</label>
+
+        <!-- Here size 2 means that only 2 options are visible at a time  -->
+        <select name="Nationality" id="Name" size="2"> 
+            <option value="Indian">Indian</option>
+            <option value="NRI" selected>NRI</option>
+            <option value="Foreigner">Foreigner</option>
+        </select><br><br>
+
+
+        <!-- Comment -->
+        <label for="Comment">Comment</label><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <textarea name="Comment" id="Comment" cols="30" rows="10" 
+        placeholder="Please type your comment."></textarea><br><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+
+        <!-- For submit button we can use input type 
+            or button element and valule submit means, 
+            submit will print on the button -->
+        <input type="submit" value="submit">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <button type="reset">Reset</button>
+        
+        
+        </form>
+</body>
+</html>
