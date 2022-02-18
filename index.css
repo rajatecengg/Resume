@@ -34,8 +34,8 @@ p {
 }
 
 .left img {
-  width: 426px;
-  height: 380px;
+  width: 100%;
+  height: 70%;
 }
 
 .left h1 {
